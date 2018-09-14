@@ -68,11 +68,11 @@ Para la corrección se considerará el último _commit_ a la _branch master_ has
 
 ## Entrega atrasada
 
-Si se entrega la tarea atrasada se tendrá un descuento **inicial** de 5 décimas hasta un descuento de 20 décimas a las 24hrs de atraso del plazo establecido de manera lineal, con la fórmula:
+Si se entrega la tarea atrasada se tendrá un descuento **inicial** de 5 décimas hasta un descuento de 20 décimas a las 48hrs de atraso del plazo establecido de manera lineal, con la fórmula:
 
-### <center>5 + 15t / 24</center>
+### <center>5 + 15t / 48</center>
 
-Donde `t` está en horas (es una función **continua** y no discreta) y no se permiten entregas pasadas las 24 hrs de la hora inicial de entrega.
+Donde `t` está en horas (es una función **continua** y no discreta) y no se permiten entregas pasadas las 48 hrs de la hora inicial de entrega.
 
 ## Política de integridad académica
 
