@@ -66,7 +66,7 @@ class GroceryList:
             if item.bought == False:
                 print(f'{item.id_:2d} -- {item.summary.text}')
                 counter += 1  # Esto es lo mismo que “counter = counter + 1”
-                              # pero hoy igual me siento hacker po' compadre.
+                              # pero hoy igual me siento hacker po’ compadre.
 
         if counter == 0:
             print('(lista vacía)')
@@ -167,7 +167,7 @@ if __name__ == '__main__':
         # Nota: el código huele peor que este último queso.
 
         Item('Almendras (250 g)', {'fruta', 'importante'}),
-        Item('Avellaas (200 g)', {'fruta'}),
+        Item('Avellanas (200 g)', {'fruta'}),
         Item('Pistachos (150 g)', {'fruta'}),
 
         Item('Una tabla para cortar queso', {'no-se-come'}),

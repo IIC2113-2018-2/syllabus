@@ -3,7 +3,7 @@
 ## Enunciado
 
 El objetivo de esta actividad es estudiar y mejorar un _script_ (escrito para Python 3.6+) que
-pueda manejar una lista de compras.
+permite manejar una lista de compras.
 
 ## Instrucciones
 
