@@ -1,8 +1,13 @@
 """
-quince.py
+quince_.py
+
+Copyright (c) 2018, Nebil Kawas García
+This source code is subject to the terms of the Mozilla Public License.
+You can obtain a copy of the MPL at <https://www.mozilla.org/MPL/2.0/>.
 """
 
 
+from itertools import combinations
 from textwrap import dedent
 
 
@@ -17,16 +22,8 @@ class Player:
 
     @property
     def fifteen(self):
-        """
-        Muy bien por seguir las instrucciones:
-        este es el método que debes completar.
-
-        Debe devolver 'None' si es que el jugador no ha conseguido sumar 15.
-        En caso contrario, debe devolver la combinación ganadora como tupla.
-        No te olvides de crear los tests unitarios en el archivo 'tests.py'.
-        """
-
-        pass
+        fifteen = (c for c in combinations(self.numbers, 3) if sum(c) == 15)
+        return next(fifteen, None)
 
     def __repr__(self):
         numbers = (str(number) for number in self.numbers)
@@ -50,17 +47,10 @@ class Game:
 
     @property
     def available(self):
-        numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]  # puede que sirva en el futuro.
-
-        for number in numbers1:
-            if number in self.p1.numbers:
-                numbers2.remove(number)
-            if number in self.p2.numbers:
-                numbers2.remove(number)
-
-        return numbers2
+        return [
+            number for number in range(1, 10)
+            if number not in self.p1.numbers + self.p2.numbers
+        ]
 
     @property
     def winner(self):
