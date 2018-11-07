@@ -102,7 +102,7 @@ Interrogación \#2 | viernes 9 de noviembre
 
 ### Examen
 
-El curso contará con un examen obligatorio. La fecha del examen se publicará durante el semestre.
+El curso contará con un examen obligatorio. Este será el día viernes 23 de noviembre entre 14:00 y 18:20 (duración y sala por confirmar).
 
 # Foro
 
